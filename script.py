@@ -38,7 +38,7 @@ def get_file_content() -> list:
                             elem['geoData']['coordinates'][0]),
                          'latitude': elem['geoData']['coordinates'][0],
                          'longitude': elem['geoData']['coordinates'][1],
-                         }
+                         },
                         )
     return data
 
