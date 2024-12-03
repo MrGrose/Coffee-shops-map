@@ -74,7 +74,7 @@ def save_map(data: list) -> None:
 def main() -> None:
     load_dotenv()
     apikey = getenv('API_KEY')
-    address = 'Красная площадь'
+    address = input('Введите местопложение: ')
     global coords
     coords = fetch_coordinates(apikey, address)
     data = get_file_content()
